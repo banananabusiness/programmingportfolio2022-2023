@@ -14,7 +14,7 @@
 
 [OOP Graphical Space Game built in Processing 4]()
 
-![Running SpaceGame]()
+![Running SpaceGame](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/images/SpaceGame.png)
 
 [SpaceGame Source Code]()
 
