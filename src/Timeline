@@ -1,0 +1,55 @@
+// Brianna Yang | sept 13 2022 | Timeline Project
+
+void setup() {
+  size(900, 400);
+  background(#7E9B85);
+}
+
+void draw() {
+  background(#7E9B85);
+
+  //Render the title
+  textSize(30);
+  textAlign(CENTER);
+  fill(0);
+  text("Computer History Timeline", width/2, 60);
+  textSize(22);
+  text("by Brianna Yang", width/2, 85);
+
+  //render Timeline
+  stroke(0);
+  strokeWeight(3);
+  line(100, 250, 800, 250);
+  text("1935", 75, 255);
+  text("1960", 825, 255);
+
+  // Render Timeline Items
+  histEvent(124, 200, "Z2 - 1940", "In 1940 Z2 was completed by Konrad Zuse \n Replaces the arthmetic and control logic with electricrelay circuts", true);
+  histEvent(215, 300, "Z3 - 1941", "The Z3 was built with 2000 relays, implementing a 22-bit word length that operated at a clock frequency of about 5–10 Hz.\n The Z3 was proven to have been a Turing-complete machine in 1998 by Raúl Rojas \n ", false);
+  histEvent(280, 200, "Atanasoff-Berry - 1942", "The first automatic electronic digital computer \n The ABC's priority is debated among historians of computer technology, because it was neither programmable, nor Turing-complete \n Atanasoff-Berry Computer was made by John Vincent Atanasoff witht he help of Clifford Berry", true);
+  histEvent(372, 300, "Colossus - 1944", "Tommy Flowers made the Colossus with Sidney Broadhurst, William Chandler, and Allen Coombs in 1943-1945 \n Use of these machines allowed the Allies to obtain a vast amount of high-level military intelligence from intercepted radiotelegraphy messages \n between the German High Command (OKW) and their army commands throughout occupied Europe.", false);
+  histEvent(464, 200, "Manchester Baby - 1948", "Manchester Baby was made in 1948 by Fredic Calland Williams, Tom Kiburn, Geoff Tootill \n Manchester Baby was also called Small-Scale Experimental Machine. The Baby was not intended to be a practical computing engine, \n but was instead designed as a testbed for the Williams tube, the first truly random-access memory", true);
+  histEvent(537, 300, "EDSAC - 1949", "Maurice Wilkes and his team at the University of Cambridge Mathematical Laboratory Developed the Electronic Delay Storage Automatic Calculator \n Inspired by John von Neumann's seminal First Draft of a Report on the EDVAC. The project was supported by J. Lyons & Co. Ltd. \n intending to develop a commercially applied computer and succeeding in Lyons' development", false);
+  histEvent(642, 200, "Ferranti Mark 1 - 1951", "Also known as the Manchester Electronic Computer in its sales literature, \n and thus sometimes called the Manchester Ferranti, was produced by British electrical engineering firm Ferranti Ltd. \n It was the world's first commercially available general-purpose digital computer", true);
+  histEvent(733, 300, "IBM 650 - 1954", "Almost 2,000 systems were produced, the last in 1962,and it was the first computer to make a meaningful profit \n The 650 was marketed to business, scientific and engineering users as a general-purpose version of the IBM 701 and \n IBM 702 computers which were for scientific and business purposes respectively.[6] It was also marketed to users of punched card machines \n who were upgrading from calculating punches, such as the IBM 604, to computers", false);
+}
+
+void histEvent(int x, int y, String title, String detail, boolean top) {
+  if (top == true) {
+    line(x, y, x+20, y+50);
+  } else {
+    line(x, y, x+20, y-50);
+  }
+
+  rectMode(CENTER);
+  fill(#A5B2A8);
+  strokeWeight (2);
+  rect(x, y, 150, 30, 8);
+  fill(255);
+  textSize(13);
+  text(title, x, y+5);
+  if (mouseX > x-75 && mouseX < x+75 && mouseY > y-15 && mouseY < y+15) {
+    fill(0);
+    text(detail, width/2, 350);
+  }
+}
