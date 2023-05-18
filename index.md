@@ -25,3 +25,11 @@
 ![Running Pig Latin](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/images/piglatin.png)
 
 [Pig Latin Source Code](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/src/pig%20latin)
+
+### EtchASketch
+
+[OOP Graphical EtchAsketch built in Processing 4]()
+
+![Running SpaceGame](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/images/EtchASketch.png)
+
+[SpaceGame Source Code](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/src/EtchAsketch)
