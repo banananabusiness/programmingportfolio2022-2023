@@ -38,6 +38,6 @@
 
 [OOP Graphical ScreenSaver built in Processing 4]()
 
-![Running EtchASketch](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/images/ScreenSaver.png)
+![Running ScreenSaver](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/images/ScreenSaver.png)
 
-[SpaceGame Source Code](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/src/Screensaver/screensaver)
+[ScreenSaver Source Code](https://github.com/banananabusiness/programmingportfolio2022-2023/blob/main/src/Screensaver/screensaver)
