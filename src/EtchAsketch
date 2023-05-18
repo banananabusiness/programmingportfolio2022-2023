@@ -1,0 +1,86 @@
+// Brianna Yang | October 4 2022 | EtchASketch
+int x, y;
+
+void setup() {
+  size(500, 500);
+  x = width/2;
+  y = 400;
+  background(#E3DCDC);
+}
+
+void draw() {
+  stroke(#FAA2BE);
+  strokeWeight(3);
+  if(x>=width) {
+    x=width/2;
+    x=0;
+  }
+  if (keyPressed) {
+    if (key == 'w' || key == 'W') {
+      moveUp(2);
+    }
+    if (key == 'a' || key == 'A') {
+      moveLeft(2);
+    }
+    if (key == 'd' || key == 'D') {
+      moveRight(2);
+    }
+    if (key == 's' || key == 'S') {
+      moveDown(2);
+    }
+  }
+}
+
+void mousePressed() {
+  saveFrame("image-######.png");
+}
+
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+      moveUp(5);
+    } else if (keyCode == RIGHT) {
+      moveRight(5);
+    } else if (keyCode == LEFT) {
+      moveLeft(5);
+    } else if (keyCode == DOWN) {
+      moveDown(5);
+    }
+  }
+}
+
+void moveRight(int rep) {
+  for (int i=0; i<rep; i++) {
+    point(x+i, y);
+  }
+  x = x + rep;
+}
+
+void moveLeft(int rep) {
+  for (int i=0; i<rep; i++) {
+    point(x-i, y);
+  }
+  x = x - rep;
+}
+
+void moveUp(int rep) {
+  for (int i=0; i<rep; i++) {
+    point(x, y-i);
+  }
+  y = y - rep;
+}
+
+void moveDown(int rep) {
+  for (int i=0; i<rep; i++) {
+    point(x, y+i);
+  }
+  y = y + rep;
+}
+
+void moveRightDown(int rep) {
+  for (int i=0; i<rep; i++) {
+    point(x+i, y+i);
+  }
+  x= x + rep;
+  y = y + rep;
+}
