@@ -1,0 +1,29 @@
+import java.util.*;
+  
+
+public class Main {
+    
+    
+    public static void main(String[] args)
+    {
+        
+        ArrayList<String> mylist = new ArrayList<String>();
+  
+       
+        mylist.add("anthropo");
+        mylist.add("auto");
+        mylist.add("bio");
+        mylist.add("chron");
+        mylist.add("dyna");
+        mylist.add("dys");
+  
+       
+        System.out.println("Original List : \n" + mylist);
+  
+        
+        Collections.shuffle(mylist);
+  
+        
+        System.out.println("\nShuffled List : \n" + mylist);
+    }
+}
