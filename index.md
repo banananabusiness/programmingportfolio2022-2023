@@ -2,7 +2,8 @@
 # 2022-2023 programming projects
 
 ## Processing Projects 
-### contact info: briayang9690@granitesd.org
+## contact info: briayang9690@granitesd.org
+## role in projects: project leader, helping with some graphics and the overall project
 
 ### Calculator
 
