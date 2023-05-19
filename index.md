@@ -2,6 +2,7 @@
 # 2022-2023 programming projects
 
 ## Processing Projects 
+### contact info: briayang9690@granitesd.org
 
 ### Calculator
 
